@@ -4,7 +4,7 @@
   const user = resp.data;
   if (!user) {
     alert("未登录,请先登录");
-    location.href = "./login.html";
+    location.href = "/talk/login.html";
     return;
   }
 
@@ -25,7 +25,7 @@
   //   设置注销事件
   doms.close.addEventListener("click", () => {
     API.loginOut();
-    location.href = "./login.html";
+    location.href = "/talk/login.html";
   });
 
   await loadHistory();

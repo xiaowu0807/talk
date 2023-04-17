@@ -38,6 +38,6 @@ form.onsubmit = async (e) => {
   const result = await API.reg(data);
   if (result.code === 0) {
     alert("注册成功，点击确定，跳转到登录页面");
-    location.href = "./login.html";
+    location.href = "/talk/login.html";
   }
 };
