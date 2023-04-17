@@ -22,7 +22,7 @@ form.onsubmit = async (e) => {
   const result = await API.login(data);
   if (result.code === 0) {
     alert("登录成功，点击确定，跳转到首页");
-    location.href = "../静态页面/index.html";
+    location.href = "./index.html";
   } else {
     login.p.innerText = "账号或密码错误";
     pwd.input.value = "";
